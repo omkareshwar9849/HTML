@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="responsivenesscss.css" > -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(0, 114, 10);
+        }
+
+        div {
+            float: left;
+            box-sizing: content-box;
+            text-align: center;
+
+        }
+
+        .b1 {
+            background-color: rgb(255, 135, 135);
+        }
+
+        .b2 {
+            background-color: rgb(206, 109, 109);
+        }
+
+        .b3 {
+            background-color: rgb(149, 77, 77);
+        }
+
+        .b4 {
+            background-color: rgb(93, 47, 47);
+        }
+
+        @media all and (min-width:1001px) {
+            div {
+                width: 24%;
+                height: 100px;
+            }
+        }
+
+        @media all and (max-width:1000px) and (min-width:700px) {
+            div {
+                width: 30%;
+                height: 100px;
+            }
+        }
+
+        @media all and (max-width:700px) and (min-width:400px) {
+            div {
+                width: 45%;
+                height: 100px;
+            }
+        }
+
+        @media all and (max-width:400px) {
+            div {
+                width: 99%;
+                height: 100px;
+            }
+        }
+    </style>
+    <title>Responsiveness</title>
+</head>
+
+<body>
+    <h1>Media query for colums increase or decrease the screen size to change</h1>
+    <div class="b1">
+        <h3>Name1</h3>
+        i am omkar
+    </div>
+    <div class="b2">
+        <h3>Name2</h3>
+        i am omkar
+    </div>
+    <div class="b3">
+        <h3>Name3</h3>
+        i am omkar
+    </div>
+    <div class="b4">
+        <h3>Name4</h3>
+        i am omkar
+    </div>
+</body>
+
+</html>

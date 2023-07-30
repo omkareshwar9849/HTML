@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: whitesmoke;
+    }
+    form{
+        height: 300px;
+        width: 450px;
+        background-color: white;
+        border-radius: 5px;
+        padding:20px;
+        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    h1{
+        text-align: center;
+    }
+    label{
+        font-size: large;
+        font-weight: 600;
+    }
+    input{
+        height: 35px;
+        width: 100%;
+        border-radius: 3px;
+        border: 1.5px solid grey;
+        margin-bottom: 8px;
+    }
+    button{
+        margin: 15px 0 15px 0;
+        border: none;
+        text-decoration: none;
+        background-color: green;
+        color: white;
+        height: 40px;
+        width: 100%;
+        border-radius: 2px;
+        font-size: large;
+        font-weight: 500;
+    }
+    a{
+        text-decoration: none;
+        color: green;
+    }
+    .forget{
+
+        text-align: center;
+        font-size: large;
+        font-weight: 500;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <form>
+            <h1>Login</h1>
+            <div class = "user">
+                <label >Username</label><br>
+                <input type="text">
+            </div>
+            <div class = "user">
+                <label > Password</label><br>
+                <input type="password">
+            </div>
+            <div class = "button"><button>Login</button></div>
+            <div class= "forget">
+                Don't have an account?
+                <a href="#">Sign Up</a>
+            </div>
+    </form>
+    </div>
+</body>
+</html>

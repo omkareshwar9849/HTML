@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+            grid-gap: 20px;
+            grid-auto-rows: minmax(100px,auto);
+            grid-auto-columns: minmax(50px,auto);
+
+
+        }
+        .items{
+            background-color: greenyellow;
+            border: 3px solid green;
+            border-radius: 3px;
+        }
+       
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 20px;
+        }
+        .nested-item{
+            border: 2px solid blue;
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">
+            <div class="nested-item">Daba mai daba 1</div>
+            <div class="nested-item">Daba mai daba 2</div>
+            <div class="nested-item">Daba mai daba 3</div>
+        </div>
+        <div class="items item2">Dabaa2</div>
+        <div class="items">Dabaa3</div>
+        <div class="items">Dabaa4</div>
+        <div class="items">Dabaa5</div>
+    </div>
+</body>
+</html>

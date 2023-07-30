@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Assignmests / Projects</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap");
+
+      body {
+        font-family: "Josefin Sans", sans-serif;
+        background: #1e1e1e;
+        color: whitesmoke;
+      }
+
+      body h1 {
+        text-align: center;
+      }
+
+      .card-container {
+        position: absolute;
+        left: 50%;
+        top: 160%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+        align-self: center;
+      }
+
+      .card {
+        margin: 20px 40px 40px 20px;
+        width: 567px;
+        height: 302px;
+        /* transform-style: preserve-3d; */
+        perspective: 1200px;
+        transition: 0.5s;
+      }
+
+      .card .front {
+        border: ridge 10px whitesmoke;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transition: 0.5s;
+      }
+
+      .card:hover .front {
+        transform: rotateY(-180deg);
+      }
+
+      .card .back {
+        border: ridge 10px whitesmoke;
+        width: 100%;
+        height: 100%;
+        background: #1d1d1d;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        transition: 0.5s;
+      }
+
+      .card:hover .back {
+        transform: rotateY(0deg);
+      }
+
+      .card .back .details {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .card .back .details .caption {
+        font-weight: 100;
+        font-style: italic;
+      }
+
+      .card .back .details .caption,
+      h2,
+      span {
+        color: whitesmoke;
+      }
+
+    a {
+        padding: 5px;
+        display: inline-block;
+        width: 32px;
+        line-height: 32px;   
+        background: #333;
+        text-align: center;
+        
+        text-decoration: none;
+        color: whitesmoke;
+        border-radius: 50%;
+        transition: 0.5s;
+      }
+
+    a:hover {
+        background: rgb(104, 240, 215);
+      }
+
+    a:hover i {
+        transition: 0.5s;
+        color: #333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>These are my simple HTML & CSS Projects and Assignmes</h1>
+    <h1>Hover on projects to view</h1>
+
+    <div class="card-container">
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p1.png" height="300px"/>
+        </div>
+        <div class="back">
+          <div class="details">
+            <div class="caption">
+              " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              quisquam iure in! Corporis expedita consequatur tenetur rem
+              ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+              unde itaque ratione "
+            </div>
+            <h2>Madison Goldbeck</h2>
+            <span>Click here to open website : &nbsp; </span>
+            <a href="../portfolio_website/index.html" target="_blank"><i class="fa-solid fa-dragon fa-xl"></i></a>
+          </div>
+        </div>
+      </div>   
+      
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p2.png" height="300px"/>
+        </div>
+        <div class="back">
+          <div class="details">
+            <div class="caption">
+              " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              quisquam iure in! Corporis expedita consequatur tenetur rem
+              ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+              unde itaque ratione "
+            </div>
+            <h2>Madison Goldbeck</h2>
+            <span>Click here to open website : &nbsp; </span>
+            <a href="../p2_anime.html" target="_blank"><i class="fa-solid fa-dragon fa-xl"></i></a>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p3.png" height="300px"/>
+        </div>
+        <div class="back">
+          <div class="details">
+            <div class="caption">
+              " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              quisquam iure in! Corporis expedita consequatur tenetur rem
+              ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+              unde itaque ratione "
+            </div>
+            <h2>Madison Goldbeck</h2>
+            <span>Click here to open website : &nbsp; </span>
+            <a href="../p3_contactForm.html" target="_blank"><i class="fa-solid fa-dragon fa-xl"></i></a>
+          </div>
+        </div>
+      </div> 
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p4.png" height="300px"/>
+        </div>
+        <div class="back">
+          <div class="details">
+            <div class="caption">
+              " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              quisquam iure in! Corporis expedita consequatur tenetur rem
+              ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+              unde itaque ratione "
+            </div>
+            <h2>Madison Goldbeck</h2>
+            <span>Click here to open website : &nbsp; </span>
+            <a href="../p4_boxinbox.html" target="_blank"><i class="fa-solid fa-dragon fa-xl"></i></a>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <script src="https://kit.fontawesome.com/a6b21b48f9.js" crossorigin="anonymous"></script>
+  </body>
+</html>

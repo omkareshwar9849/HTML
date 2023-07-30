@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div div{
+            animation: bouncing 2s ease 0s infinite alternate both;
+            background: yellowgreen;
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+            position: relative;
+            margin-top: 200px;
+        }
+
+        div{
+            animation: bouncing 2s ease 0s infinite alternate both;
+            background-color: blueviolet;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            position: relative;
+            margin-top: 200px;
+            align-items: center;
+        }
+
+        @keyframes bouncing{
+            0%{
+                bottom:0px;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.503);
+                border-radius: 50%;
+            }
+           
+            100%{
+                bottom: 100px;
+                box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.158);
+                border-radius: 2%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

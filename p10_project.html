@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="projectcss.css"> -->
+    <!-- <link rel="stylesheet" href="projectcsss.css"> -->
+    <style>
+        * {
+            box-sizing: border-box;
+            list-style: none;
+            margin: 0;
+        }
+
+        header {
+            background-image: url(/resources/header1.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 50px;
+            text-align: center;
+            color: white;
+            font-size: 40px;
+        }
+
+        nav {
+            display: flex;
+            background-color: rgb(54, 54, 54);
+        }
+
+        nav a {
+            display: block;
+            color: antiquewhite;
+            text-decoration: none;
+            padding: 14px 20px;
+            float: left;
+        }
+
+        .menu-btn:hover {
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        section {
+            text-align: center;
+            height: 100%;
+            padding: 75px 0px;
+            min-height: 40vh;
+
+        }
+
+        section:nth-child(even) {
+            background-color: beige;
+        }
+
+        section h2 span {
+            padding: 10px 55px;
+            border-radius: 20px;
+            background: linear-gradient(to right, #f5d837, #bbb812);
+            color: whitesmoke;
+        }
+
+        img {
+            padding: 0px 20px;
+        }
+
+        h2 {
+            padding-bottom: 40px;
+        }
+
+        footer {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        footer a {
+            display: block;
+            color: antiquewhite;
+            text-decoration: none;
+            padding: 14px 20px;
+            float: left;
+        }
+
+        .copyright {
+            float: right;
+        }
+
+        section h4 {
+            margin: 0px 130px;
+        }
+
+        .flexsignup {
+            margin-left: auto;
+        }
+
+        .carousel-cell {
+            width: 66%;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .carousel-cell video {
+            max-width: 100%;
+        }
+
+        .iframe-container {
+            overflow: hidden;
+            padding-top: 56.25%;
+            position: relative;
+            height: 100%;
+
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .image-responsive {
+            max-width: 100vh;
+            height: 400px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+        }
+
+        .profile-name {
+            font-size: 2em;
+            font-weight: 900;
+            letter-spacing: 4px;
+            word-spacing: 10px;
+            text-transform: uppercase;
+            margin: 20px 0px 30px 0px;
+        }
+
+        .sm-handle a {
+            background-color: rgba(128, 128, 128, 0.248);
+            padding: 10px 15px;
+            border-radius: 30px;
+            margin: 5px 10px;
+            text-decoration: none;
+            font-size: 1.25em;
+        }
+
+        .sm-handle a:hover {
+            background-color: rgb(30 30 30 / 25%);
+        }
+
+        .sm-handle a u {
+            margin: 5px;
+        }
+
+        .yt-handle {
+            color: #FF0000;
+        }
+
+        .fb-handle {
+            color: #4267B2;
+        }
+
+        .insta-handle {
+            color: #C13584;
+        }
+
+        .about-us {
+            margin: 50px;
+        }
+
+        .about-title {
+            font-size: 1.4em;
+            padding: 0px 10px;
+            color: #120f5e;
+        }
+
+        .about-content {
+            color: #1c1a3a;
+            font-weight: 900;
+            padding-bottom: 10px 0px 20px;
+        }
+        h1{
+            color: black;
+        }
+
+
+
+        @media screen and (max-width:600px) {
+
+            footer,
+            nav {
+                flex-direction: column;
+                padding: 10px 0px;
+            }
+
+            .flexsignup {
+                margin-left: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Project</h1>
+    </header>
+    <nav>
+        <a class="menu-btn" href="#">Home</a>
+        <a class="menu-btn" href="#">Collage Reviews</a>
+        <a class="menu-btn" href="#">Courses</a>
+        <a class="menu-btn" href="#">Study Material</a>
+        <a class="menu-btn flexsignup" href="#">Login/Signup</a>
+    </nav>
+    <main>
+        <section>
+            <h2> <span>Courses</span></h2>
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"><video src="shiddat.mp4" poster="resources/some.jpg" controls></video></div>
+                <div class="carousel-cell"><video src="shiddat.mp4" poster="resources/some.jpg" controls></video></div>
+                <div class="carousel-cell"><video src="shiddat.mp4" poster="resources/some.jpg" controls></video></div>
+            </div>
+
+        </section>
+        <section>
+            <h2><span>College Reviews</span></h2>
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell iframe-container"><iframe src="https://www.youtube.com/embed/61ppyY5rUB0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="carousel-cell iframe-container"><iframe src="https://www.youtube.com/embed/61ppyY5rUB0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="carousel-cell iframe-container"><iframe src="https://www.youtube.com/embed/61ppyY5rUB0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+            </div>
+        </section>
+        <section>
+            <h2><span>Study Material</span> </h2>
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"><a href="resources/temp.pdf" target="_blank"><img class="image-responsive"
+                            src="resources/temp1.jpg"></a></div>
+                <div class="carousel-cell"><a href="resources/temp.pdf" target="_blank"><img class="image-responsive"
+                            src="resources/temp1.jpg"></a></div>
+                <div class="carousel-cell"><a href="resources/temp.pdf" target="_blank"><img class="image-responsive"
+                            src="resources/temp1.jpg"></a></div>
+                <div class="carousel-cell"><a href="resources/temp.pdf" target="_blank"><img class="image-responsive"
+                            src="resources/temp1.jpg"></a></div>
+            </div>
+        </section>
+        <section>
+            <h2><span>Our Founder</span></h2>
+            <img class="profile-image" src="resources/user.png" alt="This is omkar"><br><br>
+            <h3 class="profile-name">v v Omkareshwar</h3><br>
+            <div class="sm-handle">
+                <a class="fb-handle" href="https://www.youtube.com/channel/UCCcXZUNs6hQ9k9gjamz0naQ" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-lg fa-facebook"></i> Facebook
+                </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a class="yt-handle" href="https://www.youtube.com/channel/UCCcXZUNs6hQ9k9gjamz0naQ" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-lg fa-youtube-play"></i> YouTube
+                </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a class="insta-handle " href="https://www.youtube.com/channel/UCCcXZUNs6hQ9k9gjamz0naQ" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-lg fa-instagram"></i> Instagram</a><br><br>
+            </div>
+            <div class="about-us">
+                <h4 class="about-title">Lorem ipsum adipisicing elit. Maiores illo dolorem ipsam vero natus sapiente c.
+                </h4>
+                <br><br>
+                <h5 class="about-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto maiores quae
+                    vero aut ipsum expedita molestiae eveniet ullam odit, eaque dolore laboriosam quibusdam aliquid esse
+                    ipsa magnam sunt? Ea, eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id eaque saepe
+                    quis officia nihil voluptatum nulla, consectetur pariatur? Accusantium consequatur veniam
+                    praesentium reiciendis quo perferendis, ullam rerum doloremque corporis assumenda! Lorem ipsum dolor
+                    sit amet consectetur, adipisicing elit. Iste consequuntur cupiditate maxime ducimus consequatur
+                    numquam libero voluptas optio nesciunt culpa soluta atque fugiat, quidem tempore quod suscipit, quia
+                    recusandae earum!</h5>
+            </div>
+
+            <br><br>
+        </section>
+    </main>
+    <footer>
+        <a class="menu-btn" href="#">FAQ</a>
+        <a class="menu-btn" href="#">Contact Us</a>
+        <a class="menu-btn" href="#">Terms of Use</a>
+        <a class="menu-btn" href="#">Privacy Policy</a>
+        <a class="menu-btn" href="#">Refund Policy</a>
+        <a class="menu-btn copyright flexsignup" href="#">&copy; 2020 | Omkar</a>
+    </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>

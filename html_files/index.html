@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Projects & Assignmests</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap");
+
+      body {
+        font-family: "Josefin Sans", sans-serif;
+        background: #1e1e1e;
+        color: whitesmoke;
+      }
+
+      body h1 {
+        text-align: center;
+      }
+
+      .card-container {
+        position: absolute;
+        left: 50%;
+        top: 260%;
+
+
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+        align-self: center;
+      }
+
+      .card {
+        margin: 20px 40px 40px 20px;
+        width: 567px;
+        height: 302px;
+        /* transform-style: preserve-3d; */
+        perspective: 1200px;
+        transition: 0.5s;
+      }
+
+      .card .front {
+        border: ridge 10px whitesmoke;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transition: 0.5s;
+      }
+
+      .card:hover .front {
+        transform: rotateY(-180deg);
+      }
+
+      .card .back {
+        border: ridge 10px whitesmoke;
+        width: 100%;
+        height: 100%;
+        background: #1d1d1d;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        transition: 0.5s;
+      }
+
+      .card:hover .back {
+        transform: rotateY(0deg);
+      }
+
+      .card .back .details {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .card .back .details .caption {
+        font-weight: 100;
+        font-style: italic;
+      }
+
+      .card .back .details .caption,
+      h2,
+      span {
+        color: rgb(104, 240, 215);
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>These are my simple HTML & CSS Projects and Assignmes</h1>
+    <h1>Hover on projects to view</h1>
+
+    <div class="card-container">
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p1.png" height="300px" />
+        </div>
+        <div class="back">
+          <a href="../portfolio_website/index.html" target="_blank">
+            <div class="details">
+                <div class="caption">
+                  " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                  quisquam iure in! Corporis expedita consequatur tenetur rem
+                  ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                  unde itaque ratione "
+                </div>
+                <h2>Madison Goldbeck</h2>
+                <span>Click to open and view this website</span>
+              </div>
+          </a>
+        </div>
+      </div>   
+      
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p2.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../p2_anime.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div> 
+      
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p3.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../p3_contactForm.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div> 
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p4.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../p4_boxinbox.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div> 
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p5.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../simple_interest/index.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p6.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../p6_stickyNavBar.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p7.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../Resume/index.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p8.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../p8_loginPage.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p9.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../p9_transation.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/animation.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../animation.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p10_project.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../p10_project.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p11.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../p11_responsiveness.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p12.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../p12.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p13.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../p13_float.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p14.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../p14_flexbox.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p15.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../p15.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/p16.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../p16_position.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/c3.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../challange3.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/c5.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../challange5.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/challange7.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../challange7.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/challange9.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../challange9.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          <img src="../resources/Images/cssgrid.png" height="300px"/>
+        </div>
+        <div class="back">
+          <a href="../cssgrid.html" target="_blank">
+            <div class="details">
+              <div class="caption">
+                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                quisquam iure in! Corporis expedita consequatur tenetur rem
+                ratione saepe, perferendis ipsam alias quam. Libero illum maxime,
+                unde itaque ratione "
+              </div>
+              <h2>Madison Goldbeck</h2>
+              <span>Click to open and view this website</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/a6b21b48f9.js" crossorigin="anonymous"></script>
+  </body>
+</html>
